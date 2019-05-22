@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="{$page_basic_info.keys}">
+	<meta name="description" content="{$page_basic_info.desc}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>{$page_basic_info.title}</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/Public/Home/css/index.css">
+</head>
+<body>
+	<div class="page" id="page_index">
+		<header class="nav">
+			<div class="middle">
+				<a class="logo" href="/"><img src="/Public/Home/imgs/logo.png"></a>
+				<ul>
+					<li><a <eq name="crt_menu" value="recom"> class="crt-menu"</eq> style="border-left: none;"  href="/" title="推荐">推荐</a></li>
+					<li><a <eq name="crt_menu" value="author"> class="crt-menu"</eq> href="/Author" title="诗人">诗人</a></li>
+					<li><a <eq name="crt_menu" value="opus"> class="crt-menu"</eq> href="/Opus" title="古诗词">古诗词</a></li>
+					<li id="menu_toggle" class="menu-toggle"><div><span></span><span></span><span></span></div></li>
+					<li><a <eq name="crt_menu" value="guwen"> class="crt-menu"</eq> href="/Guwen" title="古文">古文</a></li>
+					<li><a <eq name="crt_menu" value="shuji"> class="crt-menu"</eq> style="border-right: none;" href="/Shuji" title="书籍">书籍</a></li>
+				</ul>
+				<dl id="menu_box">
+					<dd><a <eq name="crt_menu" value="recom"> class="crt-menu"</eq> style="border-left: none;"  href="/" title="推荐">推荐</a></li>
+					<dd><a <eq name="crt_menu" value="author"> class="crt-menu"</eq> href="/Author" title="诗人">诗人</a></li>
+					<dd><a <eq name="crt_menu" value="opus"> class="crt-menu"</eq> href="/Opus" title="古诗词">古诗词</a></li>
+					<dd><a <eq name="crt_menu" value="guwen"> class="crt-menu"</eq> href="/Guwen" title="古文">古文</a></li>
+					<dd><a <eq name="crt_menu" value="shuji"> class="crt-menu"</eq> style="border-right: none;" href="/Shuji" title="书籍">书籍</a></li>
+				</dl>
+			</div>
+		</header>

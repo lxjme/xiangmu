@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="full-screen" content="true">
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-fullscreen" content="true">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+	    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+		<title>微信接口</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				font-size: 20px; /* 10梅16=62.5% */
+			}
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+				color: #504321;
+				text-decoration: underline;
+			}
+			li {
+				list-style: none;
+			}
+			body {
+			    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			    color: #333;
+			    background-color: #E6E5C9;
+			}
+			/* 灏哄 */
+			.col-lg-6 {
+				width: 50%;
+				height: 50%;
+			}
+
+			/* param */
+			.bgcolor-fff { background-color: #fff; }
+			.fl { float: left; }
+			.fr { float: right; }
+			.text-center { text-align: center; }
+			.line-height-16 { line-height: 1.6; }
+			.line-height-20 { line-height: 2.0; }
+			.color-999 { color: #606060; }
+			.ftsize-12 { font-size: 0.6rem; }
+			.ftsize-16 { font-size: 0.8rem; }
+			.bg-f2f1e3 { background-color: #F2F1E3; }
+			.middle {
+				max-width: 50rem;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			.padding-1 {
+				padding: 1rem;
+			}
+			.hidden {
+				display: none;
+			}
+			.block {
+				display: block;
+			}
+			.menu {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+			}
+			.menu-li {
+				float: left;
+				text-align: center;
+				height: 2rem;
+				line-height: 2rem;
+				width: 33%;
+				font-size: 0.7rem;
+				border-right: 1px solid #E7E5E5;
+				border-top: 1px solid #E7E5E5;
+				background-color: #FBFBFB;
+			}
+
+			.menu2 {
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 2rem;
+				text-align: center;
+			}
+			.menu2 .menu2-li {
+				float: left;
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+				width: 30%;
+				margin-left: 2%;
+				background-color: #fff;
+				border: 1px solid #E7E5E5;
+			}
+			.menu2 a {
+				text-decoration: none;
+				display: block;
+				line-height: 1.5rem;
+				font-size: 0.7rem;
+				color: #888;
+			}
+			.menu2 a:hover {
+				background-color: #999;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="body">
+			<ul class="menu">
+				<li class="menu-li">{$menu_cache[0]['name']}</li>
+				<li class="menu-li">{$menu_cache[1]['name']}</li>
+				<li class="menu-li">{$menu_cache[2]['name']}</li>
+			</ul>
+			<ul class="menu2">
+				<li class="menu2-li">
+					<ul>
+						<volist name="menu_cache.0.sub_button" id="vo">
+							<li><a href="#">{$vo.name}</a></li>
+						</volist>
+					</ul>
+				</li>
+				<li class="menu2-li">
+					<ul>
+						<volist name="menu_cache.1.sub_button" id="vo">
+							<li><a href="#">{$vo.name}</a></li>
+						</volist>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<include file="Public/header"/>
+		<div class="content">
+			<div class="container">
+				<div class="fl left">
+					<div class="left-content">
+						<div class="col-main">
+							<ul class="author-item">
+								<li>
+									<div class="cont">
+										<notempty name="opus_data.img_url">
+											<div class="img">
+												<img src="{$opus_data.img_url}" alt="{$opus_data.title}">
+											</div>
+										</notempty>
+										<div class="name-desc">
+											<a href="#" class="author-name" style="color: #0F0F0F; cursor: text;"><b>{$opus_data.title}</b></a>
+											<div class="author-desc">
+												{$opus_data.content|htmlspecialchars_decode}
+											</div>
+										</div>
+									</div>
+								</li>
+								<volist name="info_data" id="vo" key="k">
+									<li>
+										<div class="cont">
+											<div class="name-desc">
+												<empty name="vo.opus_other_short">
+													<div class="author-desc" id="long_{$k}">
+														{$vo.opus_other}
+													</div>
+												<else/>
+													<div class="author-desc" id="short_{$k}">
+														{$vo.opus_other_short}
+													</div>
+													<div class="author-desc" id="long_{$k}" style="display: none;">
+														{$vo.opus_other}
+													</div>
+												</empty>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+							<div class="page_info">{$page_info}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<include file="Public/footer"/>

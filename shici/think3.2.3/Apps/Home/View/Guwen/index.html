@@ -1,0 +1,33 @@
+<include file="Home@Public/header"/>
+		<div class="content">
+			<div class="container">
+				<div class="fl left">
+					<div class="left-content">
+						<div class="col-main">
+							<ul class="author-item">
+								<volist name="book_data" id="vo">
+									<li>
+										<div class="cont">
+											<notempty name="vo.f_book_fm">
+												<div class="img">
+													<a href="/Guwen/artList_{$vo.f_id}"><img src="{$vo.f_book_fm}" alt="{$vo.f_book_name}"></a>
+												</div>
+											</notempty>
+											<div class="name-desc">
+												<a href="/Guwen/artList_{$vo.f_id}" class="author-name">{$vo.f_book_name}</a>
+												<div class="author-desc">
+													{$vo.f_book_desc}
+												</div>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+							<div class="page_info">{$page_info}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<include file="Home@Public/footer"/>

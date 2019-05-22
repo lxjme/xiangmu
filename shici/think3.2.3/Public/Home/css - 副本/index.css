@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 20px; /* 10÷16=62.5% */
+}
+@media only screen and (min-width: 481px){
+	html {
+		font-size: 94%!important; /* 15.04÷16=94% */
+	}
+}
+@media only screen and (min-width: 561px){
+	html {
+		font-size: 109%!important; /* 17.44÷16=109% */
+	}
+
+}
+@media only screen and (min-width: 641px){
+	html {
+		font-size: 125%!important; /* 20÷16=125% */
+	}
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #504321;
+	text-decoration: underline;
+}
+li {
+	list-style: none;
+}
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background-color: #F2F1E3;
+}
+/* 尺寸 */
+.col-lg-6 {
+	width: 50%;
+	height: 50%;
+}
+
+/* param */
+.bgcolor-fff { background-color: #fff; }
+.fl { float: left; }
+.fr { float: right; }
+.text-center { text-align: center; }
+.line-height-16 { line-height: 1.6; }
+.line-height-20 { line-height: 2.0; }
+.color-999 { color: #606060; }
+.ftsize-12 { font-size: 0.6rem; }
+.ftsize-16 { font-size: 0.8rem; }
+
+
+/* 导航 */
+.nav { width: 100%; background-color: #D1CFA9; border-bottom: 0.05rem solid #8D9B82; }
+.nav ul {
+	max-width: 50rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+.nav ul li {
+	display: inline;
+	padding-right: 0.9rem;
+	padding-left: 0.9rem;
+	line-height: 3rem;
+	border-right: 0.05rem solid #ABB3A4;
+}
+.nav ul a {
+	font-size: 0.75rem;
+	color: #0F1600;
+}
+
+.nav-under {
+	height: 1.85rem;
+	background-color: #E6E5C9;
+	border-bottom: 0.05rem solid #E0DEDE;
+}
+/* header */
+.content {
+	max-width: 50rem;
+	/*margin-top: 4.5rem;*/
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 1rem;
+	/*background-color: #fff;*/
+}
+.header { padding-top: 2rem; padding-bottom: 2rem; }
+.nav-brand { font-size: 1.9rem; font-weight: 100; color: #19537D; }
+
+.container {
+	float: left;
+	width: 100%;
+	/*background-color: red;*/
+}
+.tm-img { width: 100%;}
+
+
+.content-item { height: 100%; margin-left: 1rem; padding-bottom: 1rem; }
+.content-item h2 { margin-top: 3.5rem; /* margin-bottom: 70px; */ font-size: 1.7rem; font-weight: 300; line-height: 1.4; color: #19537D;}
+

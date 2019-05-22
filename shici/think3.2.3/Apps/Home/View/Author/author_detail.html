@@ -1,0 +1,58 @@
+<include file="Public/header"/>
+		<div class="content">
+			<div class="container">
+				<div class="fl left">
+					<div class="left-content">
+						<div class="col-main">
+							<ul class="author-item">
+								<li>
+									<div class="cont">
+										<notempty name="author_data.img_url">
+											<div class="img">
+												<img src="{$author_data.img_url}" alt="{$author_data.author_name}">
+											</div>
+										</notempty>
+										<div class="name-desc">
+											<a href="#" class="author-name" style="color: #0F0F0F; cursor: text;"><b>{$author_data.author_name}</b></a>
+											<div class="author-desc">
+												{$author_data.author_desc}
+											</div>
+										</div>
+									</div>
+								</li>
+								<volist name="info_data" id="vo" key="k">
+									<li>
+										<div class="cont">
+											<div class="name-desc">
+												<div class="author-desc" id="short_{$k}">
+													{$vo.author_other_short}
+												</div>
+												<div class="author-desc" id="long_{$k}" style="display: none;">
+													{$vo.author_other}
+												</div>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+							<div class="page_info">{$page_info}</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="fl sidebar-left">
+					<div class="bg-f2f1e3 fl-right">
+						<div class="sontitle">
+							<b>专题</b>
+							<div class="soncontent">
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<include file="Public/footer"/>

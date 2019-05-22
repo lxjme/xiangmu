@@ -1,0 +1,61 @@
+<include file="Public/header"/>
+		<div class="content">
+			<div class="container">
+				<div class="fl left">
+					<div class="left-content">
+						<div class="col-main">
+							<!-- <ul class="author-item filter-param">
+								<li>
+									<div class="filter-cont">
+										<div class="param-type">
+											<span class="type_name">朝代&nbsp;:</span>
+											<div class="filter_name">
+												<a <empty name="Think.get.type_pin">class="active"</empty> href="/Author">不限</a>
+												<volist name="filter_param" id="vo">
+													<a class="{$vo.class}" href="/Author/{$vo.type_pin}">{$vo.type_name}</a>
+												</volist>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul> -->
+							<ul class="author-item">
+								<volist name="author_data" id="vo">
+									<li>
+										<div class="cont">
+											<notempty name="vo.img_url">
+												<div class="img">
+													<a href="/Author/detail_{$vo.id}"><img src="{$vo.img_url}" alt="{$vo.author_name}"></a>
+												</div>
+											</notempty>
+											<div class="name-desc">
+												<a href="/Author/detail_{$vo.id}" class="author-name">{$vo.author_name}</a>
+												<div class="author-desc">
+													{$vo.author_desc}
+												</div>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+							<div class="page_info">{$page_info}</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="fl sidebar-left">
+					<div class="bg-f2f1e3 fl-right">
+						<div class="sontitle">
+							<b>专题</b>
+							<div class="soncontent">
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+								<a href="">脑筋急转弯</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<include file="Public/footer"/>
