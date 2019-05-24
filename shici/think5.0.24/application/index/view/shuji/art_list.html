@@ -1,0 +1,37 @@
+<div class="content">
+	<div class="container">
+		<div class="fl left">
+			<div class="left-content">
+				<div class="col-main">
+					<ul class="author-item">
+						<li>
+							<div class="cont">
+								{notempty name="article_data.fm"}
+									<div class="img">
+										<img style="width: 105px;" src="{$article_data.fm}" alt="{$article_data.title}">
+									</div>
+								{/notempty}
+								<div class="name-desc">
+									<a href="#" class="author-name" style="color: #0F0F0F; cursor: text;"><b>{$article_data.title|default=''}</b></a>
+									<div class="author-desc">
+										{$article_data.f_book_desc}
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="article-list shuji-article-list">
+						{volist name="article_list" id="vo" key="k"}
+							<dl>
+								{notempty name="vo.lanmu_name"}<dt><b>{$vo.lanmu_name}</b></dt>{/notempty}
+								{volist name="vo.list" id="sub_vo"}
+									<dd><a href="/Shuji/artDetail_{$sub_vo.id}">{$i}.{$sub_vo.title|default=''}</a></dd>
+								{/volist}
+							</dl>
+						{/volist}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

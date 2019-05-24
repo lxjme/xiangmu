@@ -1,0 +1,30 @@
+<div class="content">
+    <div class="container">
+        <div class="fl left">
+            <div class="left-content">
+                <div class="col-main">
+                    <ul class="author-item">
+                        {volist name="opus_data" id="vo"}
+                            <li>
+                                <div class="cont">
+                                    {notempty name="vo.img_url"}
+                                        <div class="img">
+                                            <a href="/Opus/detail_{$vo.id}"><img src="{$vo.img_url}" alt="{$vo.author_name}"></a>
+                                        </div>
+                                    {/notempty}
+                                    <div class="name-desc">
+                                        <a href="/Opus/detail_{$vo.id}" class="author-name">{$vo.title}</a>
+                                        <div class="year"><a href="">{$vo.f_year}</a>：<a href="">{$vo.author_name}</a> </div>
+                                        <div class="author-desc">
+                                            {$vo.content|htmlspecialchars_decode}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        {/volist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

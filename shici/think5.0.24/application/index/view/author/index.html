@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="container">
+        <div class="fl left">
+            <div class="left-content">
+                <div class="col-main">
+                    <ul class="author-item">
+                        {volist name="author_data" id="vo"}
+                            <li>
+                                <div class="cont">
+                                    {notempty name="vo.img_url"}
+                                        <div class="img">
+                                            <a href="/Author/detail_{$vo.id}"><img src="/static{$vo.img_url}" alt="{$vo.author_name}"></a>
+                                        </div>
+                                    {/notempty}
+                                    <div class="name-desc">
+                                        <a href="/Author/detail_{$vo.id}" class="author-name">{$vo.author_name}</a>
+                                        <div class="author-desc">
+                                            {$vo.author_desc}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        {/volist}
+                    </ul>
+                    <div class="page_info">{$author_data->render()}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
