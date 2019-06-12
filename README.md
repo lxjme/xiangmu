@@ -6,3 +6,4 @@
 [诗词文章网](shici/)
 
 ### java项目
+[酒家信息管理平台](/diancan/java)
