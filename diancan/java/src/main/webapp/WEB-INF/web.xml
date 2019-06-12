@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0">
+
+  <filter>
+      <filter-name>FirstFilter</filter-name>
+      <filter-class>com.lxj.diancan.filter.FirstFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>FirstFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- 后台 -->
+
+  <!-- 首页 -->
+    <servlet>
+        <servlet-name>AdminIndexServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.admin.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminIndexServlet</servlet-name>
+        <url-pattern>/admin/*</url-pattern>
+    </servlet-mapping>
+
+  <!-- 餐桌 -->
+  <servlet>
+      <servlet-name>BoardServlet</servlet-name>
+      <servlet-class>com.lxj.diancan.servlet.admin.BoardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BoardServlet</servlet-name>
+      <url-pattern>/admin/board/*</url-pattern>
+  </servlet-mapping>
+
+  <!-- 菜系 -->
+    <servlet>
+        <servlet-name>FoodTypeServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.admin.FoodTypeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FoodTypeServlet</servlet-name>
+        <url-pattern>/admin/foodtype/*</url-pattern>
+    </servlet-mapping>
+    <!-- 菜品 -->
+    <servlet>
+        <servlet-name>FoodServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.admin.FoodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FoodServlet</servlet-name>
+        <url-pattern>/admin/food/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- 订单 -->
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.admin.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/admin/order/*</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- 上传 -->
+    <servlet>
+        <servlet-name>UploadPhotoServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.admin.UploadPhotoServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UploadPhotoServlet</servlet-name>
+        <url-pattern>/uploadPhoto</url-pattern>
+    </servlet-mapping> 
+
+    <!-- 前端 -->
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.lxj.diancan.servlet.IndexServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index/*</url-pattern>
+    </servlet-mapping> 
+
+
+  <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
