@@ -1,0 +1,237 @@
+2019-06-14 10:29:46 :: ::1_64045_F:\php\blog\app\Http\Controllers\GuwenController.php::43::fdsf : array(2) {
+  [0]=>
+  array(3) {
+    ["query"]=>
+    string(76) "select count(*) as aggregate from `mysite_books_lanmu` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(2.28)
+  }
+  [1]=>
+  array(3) {
+    ["query"]=>
+    string(82) "select `id`, `title`, `lanmu_id` from `mysite_books_article` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(76.61)
+  }
+}
+
+2019-06-14 10:29:46 :: ::1_64045_F:\php\blog\app\Http\Controllers\GuwenController.php::45::lanmu_count : 0
+2019-06-14 10:29:46 :: ::1_64045_F:\php\blog\app\Http\Controllers\GuwenController.php::65::fsdf : array(1) {
+  [0]=>
+  array(1) {
+    ["list"]=>
+    array(6) {
+      [3575]=>
+      array(2) {
+        ["id"]=>
+        int(3575)
+        ["title"]=>
+        string(6) "原始"
+      }
+      [3576]=>
+      array(2) {
+        ["id"]=>
+        int(3576)
+        ["title"]=>
+        string(6) "正道"
+      }
+      [3577]=>
+      array(2) {
+        ["id"]=>
+        int(3577)
+        ["title"]=>
+        string(12) "求人之志"
+      }
+      [3578]=>
+      array(2) {
+        ["id"]=>
+        int(3578)
+        ["title"]=>
+        string(12) "本德宗道"
+      }
+      [3579]=>
+      array(2) {
+        ["id"]=>
+        int(3579)
+        ["title"]=>
+        string(6) "道义"
+      }
+      [3580]=>
+      array(2) {
+        ["id"]=>
+        int(3580)
+        ["title"]=>
+        string(6) "安礼"
+      }
+    }
+  }
+}
+
+2019-06-14 10:33:19 :: ::1_64805_F:\php\blog\app\Http\Controllers\GuwenController.php::43::fdsf : array(2) {
+  [0]=>
+  array(3) {
+    ["query"]=>
+    string(76) "select count(*) as aggregate from `mysite_books_lanmu` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(2.57)
+  }
+  [1]=>
+  array(3) {
+    ["query"]=>
+    string(82) "select `id`, `title`, `lanmu_id` from `mysite_books_article` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(80.95)
+  }
+}
+
+2019-06-14 10:33:19 :: ::1_64805_F:\php\blog\app\Http\Controllers\GuwenController.php::45::lanmu_count : 0
+2019-06-14 10:33:19 :: ::1_64805_F:\php\blog\app\Http\Controllers\GuwenController.php::65::fsdf : array(1) {
+  [0]=>
+  array(1) {
+    ["list"]=>
+    array(6) {
+      [3575]=>
+      array(2) {
+        ["id"]=>
+        int(3575)
+        ["title"]=>
+        string(6) "原始"
+      }
+      [3576]=>
+      array(2) {
+        ["id"]=>
+        int(3576)
+        ["title"]=>
+        string(6) "正道"
+      }
+      [3577]=>
+      array(2) {
+        ["id"]=>
+        int(3577)
+        ["title"]=>
+        string(12) "求人之志"
+      }
+      [3578]=>
+      array(2) {
+        ["id"]=>
+        int(3578)
+        ["title"]=>
+        string(12) "本德宗道"
+      }
+      [3579]=>
+      array(2) {
+        ["id"]=>
+        int(3579)
+        ["title"]=>
+        string(6) "道义"
+      }
+      [3580]=>
+      array(2) {
+        ["id"]=>
+        int(3580)
+        ["title"]=>
+        string(6) "安礼"
+      }
+    }
+  }
+}
+
+2019-06-14 10:34:24 :: ::1_65061_F:\php\blog\app\Http\Controllers\GuwenController.php::43::fdsf : array(2) {
+  [0]=>
+  array(3) {
+    ["query"]=>
+    string(76) "select count(*) as aggregate from `mysite_books_lanmu` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(2.23)
+  }
+  [1]=>
+  array(3) {
+    ["query"]=>
+    string(82) "select `id`, `title`, `lanmu_id` from `mysite_books_article` where (`book_id` = ?)"
+    ["bindings"]=>
+    array(1) {
+      [0]=>
+      string(2) "32"
+    }
+    ["time"]=>
+    float(87.85)
+  }
+}
+
+2019-06-14 10:34:24 :: ::1_65061_F:\php\blog\app\Http\Controllers\GuwenController.php::45::lanmu_count : 0
+2019-06-14 10:34:24 :: ::1_65061_F:\php\blog\app\Http\Controllers\GuwenController.php::65::fsdf : array(1) {
+  [0]=>
+  array(1) {
+    ["list"]=>
+    array(6) {
+      [3575]=>
+      array(2) {
+        ["id"]=>
+        int(3575)
+        ["title"]=>
+        string(6) "原始"
+      }
+      [3576]=>
+      array(2) {
+        ["id"]=>
+        int(3576)
+        ["title"]=>
+        string(6) "正道"
+      }
+      [3577]=>
+      array(2) {
+        ["id"]=>
+        int(3577)
+        ["title"]=>
+        string(12) "求人之志"
+      }
+      [3578]=>
+      array(2) {
+        ["id"]=>
+        int(3578)
+        ["title"]=>
+        string(12) "本德宗道"
+      }
+      [3579]=>
+      array(2) {
+        ["id"]=>
+        int(3579)
+        ["title"]=>
+        string(6) "道义"
+      }
+      [3580]=>
+      array(2) {
+        ["id"]=>
+        int(3580)
+        ["title"]=>
+        string(6) "安礼"
+      }
+    }
+  }
+}
+

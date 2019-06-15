@@ -1,0 +1,25 @@
+<include file="Public/header"/>
+		<div class="content">
+			<div class="container">
+				<div class="fl left">
+					<div class="left-content">
+						<div class="col-main">
+							<div class="article-list recom-list">
+								<br>
+								<h4>{$page_title}</h4>
+								<volist name="res_data" id="vo">
+									<dl>
+										<notempty name="vo.type_name"><dt><b>{$vo.type_name}</b></dt></notempty>
+										<volist name="vo.type_data" id="sub_vo">
+											<dd><a href="/Opus/detail_{$sub_vo.id}">{$sub_vo.title}</a>&nbsp;<a href="/Author/detail_{$sub_vo.author_id}"><font style="color: #999; font-size: 0.6rem;" >({$sub_vo.author_name})</font></a></dd>
+										</volist>
+									</dl>
+								</volist>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<include file="Public/footer"/>
